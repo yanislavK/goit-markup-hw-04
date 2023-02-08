@@ -133,11 +133,14 @@ body {
 
 /* hero */
 .hero {
-  background-color: var(--hero-color);
   padding-bottom: 188px;
   padding-top: 188px;
   text-align: center;
-  
+  background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+   url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+background-position: center;
 }
 
 .hero-title {
@@ -201,6 +204,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.advantage-icon-sec{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: #F4F4FD;
+}
+.advantage-icon{
+  width: 60px;
+  height: 64px;
 }
 
 .advantage-paragraph {
@@ -303,6 +319,42 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+
+.icons-container {
+  width: 232;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8px;
+}
+.icon-flex-box {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  
+}
+.icon-mini-box {
+
+}
+.team-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #404bbf;
+  border-radius: 50%;
+}
+.team-socials:hover{
+  background-color: #4D5AE5;
+}
+
+.team-social-icon {
+  width: 16px;
+  height: 16px;
+  fill: #F4F4FD;
+}
+  
 /* footer */
 .footer {
   background: var(--hero-color);
