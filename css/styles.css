@@ -1,0 +1,425 @@
+:root {
+  --primary-text-color: #2e2f42;
+  --action-color: #404bbf;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f4f4fd;
+  --hero-color: #2e2f42;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+
+image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container{
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.header {
+  background-color: var(--primary-bg-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+  
+}
+
+.header-container{
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-right: 76px;
+}
+
+.logo-blue {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  margin-left: 40px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--action-color);
+}
+.contacts-list{
+  display: flex;
+}
+
+.header-email {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.header-email:hover,
+.header-email:focus {
+  color: var(--action-color);
+}
+
+.header-tel {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-left: 40px;
+}
+
+/* hero */
+.hero {
+  background-color: var(--hero-color);
+  padding-bottom: 188px;
+  padding-top: 188px;
+  text-align: center;
+  
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: white;
+  
+}
+
+.hero-button {
+  width: 169px;
+  height: 56px;
+  background: #4d5ae5;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: 48px;
+  padding: 0;
+   border: 1px solid transparent;
+ 
+  
+  
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--action-color);
+}
+
+/* advantages section */
+.advantage {
+ padding-top: 120px;
+  
+}
+
+.advantage-title {
+  display: none;
+  
+}
+
+.advantage-list {
+  display: flex;
+}
+
+.advantage-item {
+  width: 264px;
+}
+.advantage .advantage-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.advantage-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-top: 8px;
+}
+
+/* what we are doing/ our services */
+.container-services{
+  width: 1158px;
+  margin: 0 auto;
+}
+.services {
+  padding-top: 120px; 
+  padding-bottom: 120px;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+  margin-bottom: 72px;
+}
+
+.services-list {
+  display: flex;
+  gap: 24px;
+
+}
+
+.services-item {
+}
+.services-pic {
+}
+
+/* team */
+
+.team {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+  padding-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  background-color: var(--primary-bg-color);
+  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 24px;
+}
+.team-item:last-child{
+  margin-right: 0px;
+}
+.team-image {
+  
+}
+
+.team-information{
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* footer */
+.footer {
+  background: var(--hero-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.footer-logo {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.footer-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+  width: 264px;
+}
+
+/* portfolio */
+
+.projects {
+  background-color: var(--primary-bg-color);
+  padding-top: 96px;
+  padding-bottom: 120px;
+
+}
+
+.projects-title {
+  display: none;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.projects-item {
+  margin-left: 24px;
+
+}
+.projects-item:first-child{
+  margin-left: 0;
+}
+.projects-button {
+  width: 116px;
+  height: 48px;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  cursor: pointer;
+}
+.projects-button:hover,
+.projects-button:focus {
+  background: #404bbf;
+  color: #ffffff;
+}
+
+/* наши работы */
+
+.jobs-title {
+  display: none;
+}
+
+.jobs-list {
+display: flex;
+flex-wrap: wrap;
+column-gap: 23px;
+row-gap: 48px;
+
+}
+
+.jobs-item {
+
+}
+
+.jobs-link {}
+
+
+.jobs-pic {
+}
+
+.jobs-aftertitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.jobs-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;  
+}
+
+.jobs-information{
+  padding: 32px 16px 64px 16px;
+  border-left: 1px solid #E7E9FC;
+  border-right:1px solid #E7E9FC;;
+  border-bottom: 1px solid #E7E9FC;
+
+}
