@@ -87,10 +87,10 @@ body {
 
 .header-list {
   display: flex;
+  gap: 40px;
 }
 
 .header-item {
-  margin-left: 40px;
 }
 
 .header-link {
@@ -210,6 +210,7 @@ body {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 .advantage-icon {
   width: 60px;
@@ -271,7 +272,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -377,9 +378,6 @@ body {
   text-align: start;
   display: inline-block;
   margin-left: 100px;
-  margin-bottom: 130px;
-  width: 206px;
-  height: 80px;
 }
 .footer-title {
   font-family: "Roboto";
@@ -412,7 +410,7 @@ body {
 }
 
 .footer-links-item:is(:hover, :focus) {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /* customers */
@@ -429,7 +427,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .customer-list {
@@ -483,8 +481,10 @@ body {
   margin-left: 0;
 }
 .projects-button {
-  width: 116px;
-  height: 48px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
@@ -501,6 +501,8 @@ body {
 .projects-button:focus {
   background: #404bbf;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* наши работы */
@@ -520,9 +522,18 @@ body {
 }
 
 .jobs-link {
+  display: block;
+}
+.jobs-link:hover,
+.jobs-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .jobs-pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .jobs-aftertitle {
@@ -542,10 +553,8 @@ body {
 }
 
 .jobs-information {
-  padding: 32px 16px 64px 16px;
+  padding: 32px 16px 32px 16px;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
